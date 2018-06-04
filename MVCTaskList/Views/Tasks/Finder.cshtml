@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Finder";
+}
+
+<h2>Finder</h2>
+
+<form action="/Tasks/Search" method="post">
+    <label>Search</label>
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="Description" class="form-control" placeholder="Decription" required />
+            </td>
+            <td>
+                <input type="submit" name="Search" class="btn btn-primary" />
+            </td>
+        </tr>
+    </table>
+</form>
+

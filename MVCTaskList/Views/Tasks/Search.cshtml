@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+
+<h3>Results for @ViewBag.Message</h3>
+
+<div class="table">
+    <table class="table">
+        <tr>
+            <th>Description</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th>ID</th>
+            
+
+        </tr>
+        @{
+            foreach (MVCTaskList.Models.Task list in ViewBag.Tasks)
+            {
+                <tr>
+                    <td>@list.Description</td>
+                    <td>@list.DueDate</td>
+                    <td>@list.Status</td>
+                    <td>@list.ID</td>
+                   
+                </tr>
+            }
+        }
+    </table>
+</div>
